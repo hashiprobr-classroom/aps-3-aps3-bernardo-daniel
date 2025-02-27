@@ -21,4 +21,5 @@ public class PassageiroTest {
         passageiro.setNome("a");
         assertEquals("a",passageiro.getNome());
     }
+
 }
