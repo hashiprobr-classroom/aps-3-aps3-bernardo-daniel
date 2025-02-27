@@ -7,11 +7,11 @@ public class Corrida {
     private int notaPassageiro;
     private int notaMotorista;
 
-    public Corrida(Passageiro passageiro, Motorista motorista,int notaPassageiro, int notaMotorista){
+    public Corrida(Passageiro passageiro){
         this.passageiro=passageiro;
-        this.motorista=null;
-        this.notaPassageiro=0;
-        this.notaMotorista=0;
+        motorista=null;
+        notaPassageiro=0;
+        notaMotorista=0;
     }
 
     public Passageiro getPassageiro() {
@@ -34,7 +34,7 @@ public class Corrida {
         return notaMotorista;
     }
 
-    private int trucado(int nota){
+    private int truncado(int nota){
         if(nota<1){
             return 1;
         }
@@ -45,11 +45,11 @@ public class Corrida {
     }
 
     public void avaliaPassageiro(int notaPassageiro1){
-        notaPassageiro=trucado(notaPassageiro1);
-
+        notaPassageiro=truncado(notaPassageiro1);
     }
 
-    public void avaliaMotorista(int notaMotorista){
-        notaMotorista=trucado(notaMotorista);
+    public void avaliaMotorista(int notaMotorista1){
+        notaMotorista=truncado(notaMotorista1);
+
     }
 }
