@@ -44,8 +44,8 @@ public class Corrida {
         return nota;
     }
 
-    public void avaliaPasageiro(int notaPassageiro){
-        notaPassageiro=trucado(notaPassageiro);
+    public void avaliaPassageiro(int notaPassageiro1){
+        notaPassageiro=trucado(notaPassageiro1);
 
     }
 

@@ -25,8 +25,8 @@ public class MotoristaTest {
     }
     @Test
     void avalia(){
-        motorista.avalia(corrida);
         Corrida corrida=mock(Corrida.class);
+        motorista.avalia(corrida,3);
         assertEquals(3,corrida.getNotaPassageiro());
     }
 }
