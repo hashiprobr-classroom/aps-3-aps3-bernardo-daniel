@@ -43,4 +43,13 @@ public class Corrida {
         }
         return nota;
     }
+
+    private void avaliaPasageiro(int notaPassageiro){
+        notaPassageiro=trucado(notaPassageiro);
+
+    }
+
+    private void avaliaMotorista(int notaMotorista){
+        notaMotorista=trucado(notaMotorista);
+    }
 }
